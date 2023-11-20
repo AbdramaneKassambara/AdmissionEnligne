@@ -1,0 +1,61 @@
+/* Ajoutez d'autres styles CSS selon vos besoins */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.col-md-6 {
+  width: 50%;
+  padding: 20px;
+}
+
+.profile-details {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.profile-actions a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.profile-actions a:hover {
+  color: #0056b3;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_image {
+  width: 100%; /* Changez la valeur en fonction de vos besoins */
+  max-width: 500px; /* Ajoutez une limite de largeur pour l'image */
+  height: auto;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px; /* Changez la hauteur en fonction de vos besoins */
+  margin-left: auto;
+}
+
+/* Ajoutez d'autres styles CSS selon vos besoins */

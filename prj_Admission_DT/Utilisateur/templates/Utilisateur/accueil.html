@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% load static %} {% block page_title %}Accueil
+Étudiant{% endblock %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/accueil_etudiant.css' %}" />
+{% endblock %} {% block content %}
+<div class="container">
+  <div class="student_info">
+    <h1>Demande d'admission à l'université</h1>
+    <p><strong>Nom : </strong>{{ info_user.code_user }}</p>
+    <p><strong>Email : </strong>{{ info_user.email }}</p>
+    <!-- {{info_user.email}} ! -->
+    <p>
+      Ici, vous trouverez toutes les informations importantes concernant votre
+      parcours universitaire.
+    </p>
+  </div>
+  <div class="user_options">
+    <a href="{% url 'deconnexion' %}">
+      <img
+        src="../../../static/img/deconnect.jpeg"
+        alt="Déconnexion"
+        class="icon"
+      />
+    </a>
+    <a href="{% url 'profil' %}">
+      <img src="../../../static/img/profil.png" alt="Profil" class="icon" />
+    </a>
+  </div>
+</div>
+<div class="action_button">
+  <a href="#">Faire une demande d'admission</a>
+</div>
+{% endblock %} {% block extra_js %}
+<script type="text/javascript" src="{% static 'js/accueil.js' %}"></script>
+{% endblock %}
+<!-- !-- {% url 'demande_admission' %} -->
